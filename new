@@ -1,77 +1,57 @@
-{
-    "name": "vm1",
-    "id": "/subscriptions/c12eb771-c263-42b9-9e17-01f71b33f2e8/resourceGroups/myrg/providers/Microsoft.Compute/virtualMachines/vm1",
-    "type": "Microsoft.Compute/virtualMachines",
-    "location": "australiaeast",
-    "properties": {
-        "hardwareProfile": {
-            "vmSize": "Standard_DS1_v2"
-        },
-        "provisioningState": "Succeeded",
-        "vmId": "fd1eb1a8-0d23-47f8-ac61-733b72c60478",
-        "additionalCapabilities": {
-            "hibernationEnabled": false
-        },
-        "storageProfile": {
-            "imageReference": {
-                "publisher": "MicrosoftWindowsServer",
-                "offer": "WindowsServer",
-                "sku": "2022-datacenter-azure-edition",
-                "version": "latest",
-                "exactVersion": "20348.3207.250210"
-            },
-            "osDisk": {
-                "osType": "Windows",
-                "name": "vm1_OsDisk_1_dd3588ae615640b6a17b953d3c48740e",
-                "createOption": "FromImage",
-                "caching": "ReadWrite",
-                "managedDisk": {
-                    "storageAccountType": "Premium_LRS",
-                    "id": "/subscriptions/c12eb771-c263-42b9-9e17-01f71b33f2e8/resourceGroups/myrg/providers/Microsoft.Compute/disks/vm1_OsDisk_1_dd3588ae615640b6a17b953d3c48740e"
-                },
-                "deleteOption": "Delete",
-                "diskSizeGB": 127
-            },
-            "dataDisks": []
-        },
-        "osProfile": {
-            "computerName": "vm1",
-            "adminUsername": "Administrator123",
-            "windowsConfiguration": {
-                "provisionVMAgent": true,
-                "enableAutomaticUpdates": true,
-                "patchSettings": {
-                    "patchMode": "AutomaticByOS",
-                    "assessmentMode": "ImageDefault",
-                    "enableHotpatching": false
-                }
-            },
-            "secrets": [],
-            "allowExtensionOperations": true,
-            "requireGuestProvisionSignal": true
-        },
-        "securityProfile": {
-            "uefiSettings": {
-                "secureBootEnabled": true,
-                "vTpmEnabled": true
-            },
-            "securityType": "TrustedLaunch"
-        },
-        "networkProfile": {
-            "networkInterfaces": [
-                {
-                    "id": "/subscriptions/c12eb771-c263-42b9-9e17-01f71b33f2e8/resourceGroups/myrg/providers/Microsoft.Network/networkInterfaces/vm1111",
-                    "properties": {
-                        "deleteOption": "Detach"
-                    }
-                }
-            ]
-        },
-        "diagnosticsProfile": {
-            "bootDiagnostics": {
-                "enabled": true
-            }
-        }
-    },
-    "apiVersion": "2021-03-01"
-}
+---
+name: "vm1"
+id: "/subscriptions/c12eb771-c263-42b9-9e17-01f71b33f2e8/resourceGroups/myrg/providers/Microsoft.Compute/virtualMachines/vm1"
+type: "Microsoft.Compute/virtualMachines"
+location: "australiaeast"
+properties: 
+  hardwareProfile: 
+    vmSize: "Standard_DS1_v2"
+  provisioningState: "Succeeded"
+  vmId: "fd1eb1a8-0d23-47f8-ac61-733b72c60478"
+  additionalCapabilities: 
+    hibernationEnabled: "false"
+  storageProfile: 
+    imageReference: 
+      publisher: "MicrosoftWindowsServer"
+      offer: "WindowsServer"
+      sku: "2022-datacenter-azure-edition"
+      version: "latest"
+      exactVersion: "20348.3207.250210"
+    osDisk: 
+      osType: "Windows"
+      name: "vm1_OsDisk_1_dd3588ae615640b6a17b953d3c48740e"
+      createOption: "FromImage"
+      caching: "ReadWrite"
+      managedDisk: 
+        storageAccountType: "Premium_LRS"
+        id: "/subscriptions/c12eb771-c263-42b9-9e17-01f71b33f2e8/resourceGroups/myrg/providers/Microsoft.Compute/disks/vm1_OsDisk_1_dd3588ae615640b6a17b953d3c48740e"
+      deleteOption: "Delete"
+      diskSizeGB: "127"
+    dataDisks: 
+  osProfile: 
+    computerName: "vm1"
+    adminUsername: "Administrator123"
+    windowsConfiguration: 
+      provisionVMAgent: "true"
+      enableAutomaticUpdates: "true"
+      patchSettings: 
+        patchMode: "AutomaticByOS"
+        assessmentMode: "ImageDefault"
+        enableHotpatching: "false"
+    secrets: 
+    allowExtensionOperations: "true"
+    requireGuestProvisionSignal: "true"
+  securityProfile: 
+    uefiSettings: 
+      secureBootEnabled: "true"
+      vTpmEnabled: "true"
+    securityType: "TrustedLaunch"
+  networkProfile: 
+    networkInterfaces: 
+    - id: "/subscriptions/c12eb771-c263-42b9-9e17-01f71b33f2e8/resourceGroups/myrg/providers/Microsoft.Network/networkInterfaces/vm1111"
+      properties: 
+        deleteOption: "Detach"
+  diagnosticsProfile: 
+    bootDiagnostics: 
+      enabled: "true"
+apiVersion: "2021-03-01"
