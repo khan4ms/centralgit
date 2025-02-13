@@ -1,6 +1,6 @@
 ---
-name: "vm1"
-id: "/subscriptions/c12eb771-c263-42b9-9e17-01f71b33f2e8/resourceGroups/myrg/providers/Microsoft.Compute/virtualMachines/vm1"
+name: "vm2"
+id: "/subscriptions/c12eb771-c263-42b9-9e17-01f71b33f2e8/resourceGroups/myrg/providers/Microsoft.Compute/virtualMachines/vm2"
 type: "Microsoft.Compute/virtualMachines"
 location: "australiaeast"
 properties: 
@@ -29,7 +29,7 @@ properties:
       diskSizeGB: "127"
     dataDisks: 
   osProfile: 
-    computerName: "vm1"
+    computerName: "vm2"
     adminUsername: "Administrator123"
     windowsConfiguration: 
       provisionVMAgent: "true"
