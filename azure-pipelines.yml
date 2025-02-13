@@ -1,8 +1,8 @@
 ---
-name: "vm2"
-id: "/subscriptions/c12eb771-c263-42b9-9e17-01f71b33f2e8/resourceGroups/myrg/providers/Microsoft.Compute/virtualMachines/vm2"
-type: "Microsoft.Compute/virtualMachines"
-location: "australiaeast"
+name:"vm2"
+id:"/subscriptions/c12eb771-c263-42b9-9e17-01f71b33f2e8/resourceGroups/myrg/providers/Microsoft.Compute/virtualMachines/vm2"
+type:"Microsoft.Compute/virtualMachines"
+location:"australiaeast"
 properties: 
   hardwareProfile: 
     vmSize: "Standard_DS1_v2"
@@ -54,4 +54,4 @@ properties:
   diagnosticsProfile: 
     bootDiagnostics: 
       enabled: "true"
-apiVersion: "2021-03-01"
+apiVersion:"2021-03-01"
